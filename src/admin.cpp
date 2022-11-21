@@ -133,8 +133,9 @@ void justdelete(node **Head){
 // //==========================Menu Admin==============================
 
 
-//==========================login Admin=============================
+//==========================Menu CRUD Admin=============================
 void dataadmin(){
+	system("cls");
 	node *Head = NULL;
 	int menu;
 	while(menu != 9){
@@ -171,13 +172,13 @@ void dataadmin(){
 	}
 }
 
-//==========================login Admin=============================
+//==========================Menu CRUD Admin=============================
 
 
 
 //==========================login Admin=============================
 void loginAdmin(){
-	system("color a");
+	system("color b");
 	string user, pass;
 	string username = "admin";
 	string password = "admin";
@@ -193,13 +194,15 @@ void loginAdmin(){
     	cout
 		<<"Username dan Password benar...\n"
 		<<"=====ANDA BERHASIL LOGIN!====="<<endl;
-		dataadmin();	
+		dataadmin();
+		system("cls");	
 	}else
 	{
 		cout
 		<<"Username dan Password Salah...\n"
 		<<"------Silahkan coba lagi!------"<<endl;
 		loginAdmin();
+		system("cls");
 	}
 }
 //==========================login Admin=============================
