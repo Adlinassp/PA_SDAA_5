@@ -18,11 +18,11 @@ struct Node{
 
 //Deklarasi struct lokasi vaksin
 struct lokasi{
-	int no_tenda;
+	int no_pos;
 	string waktu, tempat, jalan, kelurahan;
 };
 //struct Node
 struct node{
 	lokasi datas;
-	struct Node *next;
+	struct node *next;
 };
