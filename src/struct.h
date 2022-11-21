@@ -22,7 +22,7 @@ struct lokasi{
 	string waktu, tempat, jalan, kelurahan;
 };
 //struct Node
-struct Node{
+struct node{
 	lokasi datas;
 	struct Node *next;
 };
