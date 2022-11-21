@@ -1,14 +1,12 @@
 #include <stdio.h>
 
-#include "fungsi.h"
+#include "admin.h"
 
 using namespace std;
 
 
 int main() {
-
-tambah_data();
-tampil_data();
-
+    
+    void loginAdmin();
 
 }
