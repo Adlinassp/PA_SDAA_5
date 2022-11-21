@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//Deklarasi struct
+//Deklarasi struct peserta vaksin
 struct vaksin{
 	int no_urut;
 	string nama, kelurahan, dosis;
@@ -16,3 +16,13 @@ struct Node{
 };
 
 
+//Deklarasi struct lokasi vaksin
+struct lokasi{
+	int no_tenda;
+	string waktu, tempat, jalan, kelurahan;
+};
+//struct Node
+struct Node{
+	lokasi datas;
+	struct Node *next;
+};
