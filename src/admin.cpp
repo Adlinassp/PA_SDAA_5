@@ -7,7 +7,18 @@
 using namespace std;
 //==========================Data Lokasi==============================
 //CRUD
-void tambahdata
+void tambahdata(node **Head){
+	int i;
+	node *nodebaru = new node;
+    cout<<"Input No.Urut Hewan   : "; cin>>nodebaru->datas.no_pos;
+	cout<<"Input Jenis Hewan     : "; fflush(stdin); getline (cin, nodebaru->datas.tempat);
+	cout<<"Input Nama Hewan      : "; fflush(stdin); getline (cin, nodebaru->datas.jalan);
+	cout<<"Input Gejala Hewan    : "; fflush(stdin); getline (cin, nodebaru->datas.kelurahan);
+	cout<<"Input Layanan         : "; fflush(stdin); getline (cin, nodebaru->datas.waktu);
+    nodebaru->next = *Head;
+	*Head=nodebaru;
+	i++;
+}
 //==========================Menu Admin==============================
 void menuAdmin(){
 	int menu;
