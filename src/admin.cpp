@@ -159,9 +159,11 @@ void dataadmin(){
 			case 3:
 			updatedata(&Head);
 			break;
-			case 9:
+			case 4:
 			justdelete(&Head);
 			break;
+			// case 9:
+			
 			default:
 			cout<<"Pilihan tidak ada"<<endl;
 			break;
