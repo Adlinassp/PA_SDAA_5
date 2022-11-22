@@ -32,17 +32,17 @@ void tampildata(node *Head){
 	}
 	int i = 1;
 	while (Head !=NULL){
-		cout<<"Input No.Pos Vaksinasi     : "<<Head->datas.no_pos<<endl;
-		cout<<"Input Tempat Vaksinasi     : "<<Head->datas.tempat<<endl;
-		cout<<"Input Jalan Vaksinasi      : "<<Head->datas.jalan<<endl;
-		cout<<"Input Kelurahan Vaksinasi  : "<<Head->datas.kelurahan<<endl;
-		cout<<"Input Waktu Vaksinasi      : "<<Head->datas.waktu<<endl;
+		cout<<"No.Pos Vaksinasi     : "<<Head->datas.no_pos<<endl;
+		cout<<"Tempat Vaksinasi     : "<<Head->datas.tempat<<endl;
+		cout<<"Jalan Vaksinasi      : "<<Head->datas.jalan<<endl;
+		cout<<"Kelurahan Vaksinasi  : "<<Head->datas.kelurahan<<endl;
+		cout<<"Waktu Vaksinasi      : "<<Head->datas.waktu<<endl;
 		cout<<endl;
 		Head=Head->next;
 		i++;
 
 		
-	}
+	} 
 }
 //UPDATE DATA 
 void updatedata(node **Head){
@@ -100,40 +100,40 @@ void deletelast(node **Head){
     temp->next=NULL;
 	system("cls");
 }
-// //==========================Menu Admin==============================
-// void menuAdmin(){
-// 	int menu;
-// 	while(menu != 9){
+//==========================Menu Admin==============================
+void menuAdmin(){
+	int menu;
+	while(menu != 9){
 		
-// 		cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
-// 		cout<<"|+-+-+- Menu Admin Vaksinasi: -+-+-+|"<<endl;
-// 		cout<<"|1. Operator Data Pasien Vaksinasi  |"<<endl;
-// 		cout<<"|2. Penjadwalan dan PengaLokasian   |"<<endl;
-// 		cout<<"|3. Masukkan Data Lokasi            |"<<endl;
-// 		cout<<"|9. Kembali ke Menu Utama           |"<<endl;
+		cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
+		cout<<"|+-+-+- Menu Admin Vaksinasi: -+-+-+|"<<endl;
+		cout<<"|1. Operator Data Pasien Vaksinasi  |"<<endl;
+		cout<<"|2. Penjadwalan dan PengaLokasian   |"<<endl;
+		cout<<"|3. Masukkan Data Lokasi            |"<<endl;
+		cout<<"|9. Kembali ke Menu Utama           |"<<endl;
 		
-// 		cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
-// 		cout<<"Pilih Menu? : ";cin>>menu;
-// 		switch (menu){
-// 			case 1:
+		cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
+		cout<<"Pilih Menu? : ";cin>>menu;
+		switch (menu){
+			case 1:
 			
-// 			break;
-// 			case 2:
+			break;
+			case 2:
 
-// 			break;
-// 			case 3:
+			break;
+			case 3:
 
-// 			break;
-// 			case 9:
+			break;
+			case 9:
 
-// 			break;
-// 			default:
-// 			cout<<"Pilihan tidak ada"<<endl;
-// 			break;
-// 		}
-// 	}
-// }
-// //==========================Menu Admin==============================
+			break;
+			default:
+			cout<<"Pilihan tidak ada"<<endl;
+			break;
+		}
+	}
+}
+//==========================Menu Admin==============================
 
 
 //==========================Menu CRUD Admin=============================
@@ -168,8 +168,8 @@ void dataadmin(){
 			deletelast(&Head);
 			cout<<"Data Berhasil Dihapus!"<<endl;
 			break;
-			// case 9:
-			
+			case 9:
+			continue;
 			default:
 			cout<<"Pilihan tidak ada"<<endl;
 			break;
