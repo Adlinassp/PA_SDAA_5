@@ -6,7 +6,7 @@ void tampildata(node *Head);
 
 void updatedata(node **Head);
 
-void justdelete(node **Head);
+void deletelast(node **Head);
 
 void dataadmin();
 

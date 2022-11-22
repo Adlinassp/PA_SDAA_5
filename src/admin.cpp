@@ -9,7 +9,7 @@ using namespace std;
 
 //==========================Data Lokasi==============================
 //CRUD
-//TAMBAH DATA
+//TAMBAH DATA AWAL
 void tambahdata(node **Head){
 	system("cls");
 	int i;
@@ -22,6 +22,7 @@ void tambahdata(node **Head){
     nodebaru->next = *Head;
 	*Head=nodebaru;
 	i++;
+	system("cls");
 }
 //TAMPIL DATA
 void tampildata(node *Head){
@@ -79,13 +80,11 @@ void updatedata(node **Head){
         i++;
         temp = temp->next;
         }
+		system("cls");
 		}
-//DELETE DATA 
-void justdelete(node **Head){
+//DELETE DATA AKHIR
+void deletelast(node **Head){
 	system("cls");
-    int pilihan,i=1;
-    cout<<"Hapus Pada Data Ke: ";cin>>pilihan;
-    pilihan=1;
     if(*Head==NULL){
         cout<<"kosong"<<endl;
     return;
@@ -95,11 +94,11 @@ void justdelete(node **Head){
         return;
     }
     node *temp=*Head;
-    while (temp->next->next!=NULL && pilihan>=1 && i<pilihan){
+    while (temp->next->next!=NULL){
         temp=temp->next;
-        i++;
     }
-    temp->next=temp->next->next;
+    temp->next=NULL;
+	system("cls");
 }
 // //==========================Menu Admin==============================
 // void menuAdmin(){
@@ -163,9 +162,11 @@ void dataadmin(){
 			break;
 			case 3:
 			updatedata(&Head);
+			cout<<"Data Berhasil di Update!"<<endl;
 			break;
 			case 4:
-			justdelete(&Head);
+			deletelast(&Head);
+			cout<<"Data Berhasil Dihapus!"<<endl;
 			break;
 			// case 9:
 			
@@ -198,15 +199,13 @@ void loginAdmin(){
     	cout
 		<<"Username dan Password benar...\n"
 		<<"=====ANDA BERHASIL LOGIN!====="<<endl;
-		dataadmin();
-		system("cls");	
+		dataadmin();	
 	}else
 	{
 		cout
 		<<"Username dan Password Salah...\n"
 		<<"------Silahkan coba lagi!------"<<endl;
 		loginAdmin();
-		system("cls");
 	}
 }
 //==========================login Admin=============================
