@@ -11,6 +11,7 @@ using namespace std;
 //CRUD
 //TAMBAH DATA
 void tambahdata(node **Head){
+	system("cls");
 	int i;
 	node *nodebaru = new node;
     cout<<"Input No.Pos Vaksinasi     : "; cin>>nodebaru->datas.no_pos;
@@ -24,6 +25,7 @@ void tambahdata(node **Head){
 }
 //TAMPIL DATA
 void tampildata(node *Head){
+	system("cls");
 	if (Head==NULL){
 	cout<<"linked list kosong"<<endl;
 	}
@@ -43,6 +45,7 @@ void tampildata(node *Head){
 }
 //UPDATE DATA 
 void updatedata(node **Head){
+	system("cls");
     if (Head==NULL){
 	cout<<"linked list kosong"<<endl;
 	}
@@ -79,9 +82,10 @@ void updatedata(node **Head){
 		}
 //DELETE DATA 
 void justdelete(node **Head){
+	system("cls");
     int pilihan,i=1;
     cout<<"Hapus Pada Data Ke: ";cin>>pilihan;
-    pilihan=pilihan-1;
+    pilihan=1;
     if(*Head==NULL){
         cout<<"kosong"<<endl;
     return;
