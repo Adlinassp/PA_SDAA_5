@@ -13,3 +13,9 @@ void deletelast(node **Head);
 void dataadmin();
 
 void loginAdmin();
+
+void daftar_vaksin (Node **head);
+
+void tampil_data(Node *head);
+
+void menuUser();

@@ -3,12 +3,12 @@
 #include <string>
 #include <fstream>  //header untuk membaca,menulis, dan membuat file
 
-// #include "struct.h"
+#include "struct.h"
 
 using namespace std;
 
 
-// //TAMBAH DATA AKHIR
+//TAMBAH DATA AKHIR
 // void daftar_vaksin (Node **head){
 // 	cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
 // 	cout<<"|                   FORM PENDAFTARAN VAKSINASI              |"<<endl; 
@@ -57,30 +57,30 @@ using namespace std;
 // }
 
 
-void menuUser(){
-    system("cls");
-	// Node *head = NULL;
-    int menu;
-	while(menu != 9){
-		cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
-		cout<<"|+-+-+- MENU USER PENDAFTAR VAKSINASI : -+-+-+|"<<endl;
-		cout<<"|1. Form Pendaftaran Vaksinasi                |"<<endl;
-		cout<<"|2. Informasi Jadwal & Lokasi Vaksinasi       |"<<endl;
-		cout<<"|9. Kembali ke Menu Utama                     |"<<endl;	
-		cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
-		cout<<"Pilih Menu? : ";cin>>menu;
-		switch (menu){
-			case 1:
-			// daftar_vaksin(&head);
-			break;
-			case 2:
-            // tampil_data(head);
-			break;
-			case 9:
-            continue;
-			default:
-			cout<<"|+-+-+-+-+- PILIHAN TIDAK ADA! +-+-+-+-+-+|"<<endl;
-			break;
-		}
-	}
-}
+// void menuUser(){
+//     system("cls");
+// 	Node *head = NULL;
+//     int menu;
+// 	while(menu != 9){
+// 		cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
+// 		cout<<"|+-+-+- MENU USER PENDAFTAR VAKSINASI : -+-+-+|"<<endl;
+// 		cout<<"|1. Form Pendaftaran Vaksinasi                |"<<endl;
+// 		cout<<"|2. Informasi Jadwal & Lokasi Vaksinasi       |"<<endl;
+// 		cout<<"|9. Kembali ke Menu Utama                     |"<<endl;	
+// 		cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
+// 		cout<<"Pilih Menu? : ";cin>>menu;
+// 		switch (menu){
+// 			case 1:
+// 			daftar_vaksin(&head);
+// 			break;
+// 			case 2:
+//             tampil_data(head);
+// 			break;
+// 			case 9:
+//             continue;
+// 			default:
+// 			cout<<"|+-+-+-+-+- PILIHAN TIDAK ADA! +-+-+-+-+-+|"<<endl;
+// 			break;
+// 		}
+// 	}
+// }

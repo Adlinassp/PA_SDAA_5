@@ -3,30 +3,29 @@
 #include <iomanip>  //header untuk mengatur tampilan
 
 #include "admin.h"
-#include "user.h"
+// #include "user.h"
 
 
 using namespace std;
 int pilihan;
+
 int main() {
-	cout << "\n ===================================================================================" << endl;
-	//fungsi setw() untuk mengatur lebar tampilan
-	cout << " ||                              SELAMAT DATANG DI                                ||"<< endl;
-	cout << " ||                                                                               ||"<< endl;
-	cout << " ||                         PROGRAM PENJADWALAN VAKSINASI                         ||"<< endl;
-	cout << " ||                                                                               ||"<< endl;
-	cout << " ||                                 KOTA BONTANG                                  ||"<< endl;
-	//membuat garis pembatas
-	cout << " ===================================================================================" << endl;
-	cout << endl ;
-	system("PAUSE");
-	system("cls");
+	// cout << "\n ===================================================================================" << endl;
+	// cout << " ||                              SELAMAT DATANG DI                                ||"<< endl;
+	// cout << " ||                                                                               ||"<< endl;
+	// cout << " ||                         PROGRAM PENJADWALAN VAKSINASI                         ||"<< endl;
+	// cout << " ||                                                                               ||"<< endl;
+	// cout << " ||                                 KOTA BONTANG                                  ||"<< endl;
+	// cout << " ===================================================================================" << endl;
+	// cout << endl ;
+	// system("PAUSE");
+	// system("cls");
 
 	while(pilihan != 9)
 	{
 		system("cls");
 		cout<<"|==========================================|"<<endl;
-		cout<<"|       Selamat Datang Di Toko Sepatu      |"<<endl;
+		cout<<"|       Selamat Datang Di Program      |"<<endl;
 		cout<<"|------------------------------------------|"<<endl;
 		cout<<"| (1). Masuk Sebagai Administrasi          |"<<endl;
 		cout<<"| (2). Masuk Sebagai Pendaftar Vaksinasi   |"<<endl;

@@ -1,7 +1,7 @@
-#include "user.cpp"
+// #include "user.cpp"
 
-// void daftar_vaksin (Node **Head);
+// void daftar_vaksin (Node **head);
 
-// void tampil_data(Node *Head);
+// void tampil_data(Node *head);
 
-void menuUser();
+// void menuUser();
