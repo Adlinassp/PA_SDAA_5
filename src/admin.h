@@ -1,5 +1,7 @@
 #include "admin.cpp"
 
+void tekanLanjut();
+
 void tambahdata(node **Head);
 
 void tampildata(node *Head);

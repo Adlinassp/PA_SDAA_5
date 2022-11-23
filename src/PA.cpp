@@ -7,15 +7,54 @@
 
 
 using namespace std;
-
-int banyak_data, indeks, i, pilih_menu, pilih_user;
-char lagi;
-
+int pilihan;
 int main() {
-	menuUser();
-	
+	cout << "\n ===================================================================================" << endl;
+	//fungsi setw() untuk mengatur lebar tampilan
+	cout << " ||                              SELAMAT DATANG DI                                ||"<< endl;
+	cout << " ||                                                                               ||"<< endl;
+	cout << " ||                         PROGRAM PENJADWALAN VAKSINASI                         ||"<< endl;
+	cout << " ||                                                                               ||"<< endl;
+	cout << " ||                                 KOTA BONTANG                                  ||"<< endl;
+	//membuat garis pembatas
+	cout << " ===================================================================================" << endl;
+	cout << endl ;
+	system("PAUSE");
+	system("cls");
 
-    // //membuat garis pembatas
+	while(pilihan != 9)
+	{
+		system("cls");
+		cout<<"|==========================================|"<<endl;
+		cout<<"|       Selamat Datang Di Toko Sepatu      |"<<endl;
+		cout<<"|------------------------------------------|"<<endl;
+		cout<<"| (1). Masuk Sebagai Administrasi          |"<<endl;
+		cout<<"| (2). Masuk Sebagai Pendaftar Vaksinasi   |"<<endl;
+		cout<<"| (9). Keluar                              |"<<endl;
+		cout<<"|==========================================|"<<endl;
+		cout<<"    Masukan Pilihan Anda : ";cin>>pilihan;
+		cout<<"|==========================================|"<<endl;
+		cin.ignore();
+		switch(pilihan)
+		{
+			case 1:
+				loginAdmin();
+				break;
+			case 2:
+				menuUser();
+				break;
+			case 9:
+				continue;
+			default :
+				cout<<"---------Pilihan tidak ada------------"<<endl;
+				tekanLanjut();
+		}
+	}
+	// int pilih_menu;
+	// menuUser();
+	// loginAdmin();
+
+    //membuat garis pembatas
 	// cout << "\n ================================================================================" << endl;
 	// //fungsi setw() untuk mengatur lebar tampilan
 	// cout << " ||" << setw(30) << " " << "SELAMAT DATANG DI " << setw(30) << "||" << endl;

@@ -1,5 +1,5 @@
 #include <iostream>
-#include<conio.h>
+#include <conio.h>
 #include <string>
 
 #include "struct.h"
@@ -10,6 +10,14 @@ using namespace std;
 //==========================Data Lokasi==============================
 //CRUD
 //TAMBAH DATA AWAL
+
+void tekanLanjut()
+{
+	cout<<"\n<<<< Tekan ENTER Untuk Melanjutkan >>>>";
+	getch();
+	fflush(stdin);
+}
+
 void tambahdata(node **Head){
 	system("cls");
 	int i;
@@ -101,38 +109,38 @@ void deletelast(node **Head){
 	system("cls");
 }
 //==========================Menu Admin==============================
-void menuAdmin(){
-	int menu;
-	while(menu != 9){
+// void menuAdmin(){
+// 	int menu;
+// 	while(menu != 9){
 		
-		cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
-		cout<<"|+-+-+- Menu Admin Vaksinasi: -+-+-+|"<<endl;
-		cout<<"|1. Operator Data Pasien Vaksinasi  |"<<endl;
-		cout<<"|2. Penjadwalan dan PengaLokasian   |"<<endl;
-		cout<<"|3. Masukkan Data Lokasi            |"<<endl;
-		cout<<"|9. Kembali ke Menu Utama           |"<<endl;
+// 		cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
+// 		cout<<"|+-+-+- Menu Admin Vaksinasi: -+-+-+|"<<endl;
+// 		cout<<"|1. Operator Data Pasien Vaksinasi  |"<<endl;
+// 		cout<<"|2. Penjadwalan dan PengaLokasian   |"<<endl;
+// 		cout<<"|3. Masukkan Data Lokasi            |"<<endl;
+// 		cout<<"|9. Kembali ke Menu Utama           |"<<endl;
 		
-		cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
-		cout<<"Pilih Menu? : ";cin>>menu;
-		switch (menu){
-			case 1:
+// 		cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
+// 		cout<<"Pilih Menu? : ";cin>>menu;
+// 		switch (menu){
+// 			case 1:
 			
-			break;
-			case 2:
+// 			break;
+// 			case 2:
 
-			break;
-			case 3:
+// 			break;
+// 			case 3:
 
-			break;
-			case 9:
+// 			break;
+// 			case 9:
 
-			break;
-			default:
-			cout<<"Pilihan tidak ada"<<endl;
-			break;
-		}
-	}
-}
+// 			break;
+// 			default:
+// 			cout<<"Pilihan tidak ada"<<endl;
+// 			break;
+// 		}
+// 	}
+// }
 //==========================Menu Admin==============================
 
 
