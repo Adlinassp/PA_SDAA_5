@@ -1,14 +1,14 @@
-#include <iostream>
-#include <conio.h>
-#include <string>
-#include <fstream>  //header untuk membaca,menulis, dan membuat file
+// #include <iostream>
+// #include <conio.h>
+// #include <string>
+// #include <fstream>  //header untuk membaca,menulis, dan membuat file
 
-#include "struct.h"
+// #include "struct.h"
 
-using namespace std;
+// using namespace std;
 
 
-//TAMBAH DATA AKHIR
+// //TAMBAH DATA AKHIR
 // void daftar_vaksin (Node **head){
 // 	cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
 // 	cout<<"|                   FORM PENDAFTARAN VAKSINASI              |"<<endl; 

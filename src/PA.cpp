@@ -10,16 +10,16 @@ using namespace std;
 int pilihan;
 
 int main() {
-	// cout << "\n ===================================================================================" << endl;
-	// cout << " ||                              SELAMAT DATANG DI                                ||"<< endl;
-	// cout << " ||                                                                               ||"<< endl;
-	// cout << " ||                         PROGRAM PENJADWALAN VAKSINASI                         ||"<< endl;
-	// cout << " ||                                                                               ||"<< endl;
-	// cout << " ||                                 KOTA BONTANG                                  ||"<< endl;
-	// cout << " ===================================================================================" << endl;
-	// cout << endl ;
-	// system("PAUSE");
-	// system("cls");
+	cout << "\n ===================================================================================" << endl;
+	cout << " ||                              SELAMAT DATANG DI                                ||"<< endl;
+	cout << " ||                                                                               ||"<< endl;
+	cout << " ||                         PROGRAM PENJADWALAN VAKSINASI                         ||"<< endl;
+	cout << " ||                                                                               ||"<< endl;
+	cout << " ||                                 KOTA BONTANG                                  ||"<< endl;
+	cout << " ===================================================================================" << endl;
+	cout << endl ;
+	system("PAUSE");
+	system("cls");
 
 	while(pilihan != 9)
 	{

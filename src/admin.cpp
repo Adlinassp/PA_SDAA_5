@@ -18,10 +18,10 @@ void tekanLanjut()
 	fflush(stdin);
 }
 
-void tambahdata(node **Head){
+void tambahdata(node_lokasi **Head){
 	system("cls");
 	int i;
-	node *nodebaru = new node;
+	node_lokasi *nodebaru = new node_lokasi;
     cout<<"Input No.Pos Vaksinasi     : "; cin>>nodebaru->datas.no_pos;
 	cout<<"Input Tempat Vaksinasi     : "; fflush(stdin); getline (cin, nodebaru->datas.tempat);
 	cout<<"Input Jalan Vaksinasi      : "; fflush(stdin); getline (cin, nodebaru->datas.jalan);
@@ -33,7 +33,7 @@ void tambahdata(node **Head){
 	system("cls");
 }
 //TAMPIL DATA
-void tampildata(node *Head){
+void tampildata(node_lokasi *Head){
 	system("cls");
 	if (Head==NULL){
 	cout<<"linked list kosong"<<endl;
@@ -53,7 +53,7 @@ void tampildata(node *Head){
 	} 
 }
 //UPDATE DATA 
-void updatedata(node **Head){
+void updatedata(node_lokasi **Head){
 	system("cls");
     if (Head==NULL){
 	cout<<"linked list kosong"<<endl;
@@ -61,7 +61,7 @@ void updatedata(node **Head){
     int ubah,ubah2,i = 1;
     cout << "data ke berapa yang ingin diubah : ";
     cin >> ubah;
-    node *temp = (*Head);
+    node_lokasi *temp = (*Head);
     while (temp != NULL){
         if (i== ubah){
             cout<<"Apa yang akan diubah?\n[1]jenis\n[2]nama\n[3]umur\n[4]gejala\n[5]layanan\n:";
@@ -91,7 +91,7 @@ void updatedata(node **Head){
 		system("cls");
 		}
 //DELETE DATA AKHIR
-void deletelast(node **Head){
+void deletelast(node_lokasi **Head){
 	system("cls");
     if(*Head==NULL){
         cout<<"kosong"<<endl;
@@ -101,7 +101,7 @@ void deletelast(node **Head){
         *Head=NULL;
         return;
     }
-    node *temp=*Head;
+    node_lokasi *temp=*Head;
     while (temp->next->next!=NULL){
         temp=temp->next;
     }
@@ -147,7 +147,7 @@ void deletelast(node **Head){
 //==========================Menu CRUD Admin=============================
 void dataadmin(){
 	system("cls");
-	node *Head = NULL;
+	node_lokasi *Head = NULL;
 	int menu;
 	while(menu != 9){
 		
@@ -218,36 +218,34 @@ void loginAdmin(){
 }
 //==========================login Admin=============================
 
-
-void daftar_vaksin (Node **head){
+//==========================  USER   ===================================
+void daftar_vaksin (Node_vaksin **head){
 	cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
 	cout<<"|                   FORM PENDAFTARAN VAKSINASI              |"<<endl; 
 	cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
-	Node *Nodebaru = new Node();
+	Node_vaksin *Nodebaru = new Node_vaksin();
     cout << " Input Nomor Urut            : "; cin >> Nodebaru->data.no_urut;
-    cout << " Input Nama Lengkap          : "; fflush(stdin); getline(cin>>ws, Nodebaru->data.nama);
+    cout << " Input Nama Lengkap          : "; fflush(stdin); getline(cin, Nodebaru->data.nama);
     cout << " Input NIK                   : "; cin >> Nodebaru->data.nik;
-    cout << " Input Kelurahan Asal        : "; fflush(stdin); getline(cin>>ws, Nodebaru->data.kelurahan);
-	cout << " Input Dosis yang Diinginkan : "; fflush(stdin); getline(cin>>ws, Nodebaru->data.dosis);
+    cout << " Input Kelurahan Asal        : "; fflush(stdin); getline(cin, Nodebaru->data.kelurahan);
+	cout << " Input Dosis yang Diinginkan : "; fflush(stdin); getline(cin, Nodebaru->data.dosis);
 	cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;
     cout << endl;
 	cout << "\n ---------------- Pendaftaran Telah Berhasil ! ----------------\n" << endl;
-	Nodebaru->next =* head;
-    Nodebaru->next = NULL;
+	Nodebaru->next = NULL;
     if (*head == NULL){
         *head = Nodebaru;
         return;
     };
-    Node *temp = *head;
+    Node_vaksin *temp = *head;
     while(temp->next !=NULL){
         temp = temp->next;
     }
     temp->next = Nodebaru;
-	
 }
 
 //TAMPIL DATA AWAL
-void tampil_data(Node *head){
+void tampil_data(Node_vaksin *head){
     if (head==NULL){
 	cout<<"linked list kosong"<<endl;
 	}
@@ -270,7 +268,7 @@ void tampil_data(Node *head){
 
 void menuUser(){
     system("cls");
-	Node *head = NULL;
+	Node_vaksin *head = NULL;
     int menu;
 	while(menu != 9){
 		cout<<"|+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+|"<<endl;

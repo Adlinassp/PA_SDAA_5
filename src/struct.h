@@ -10,9 +10,9 @@ struct vaksin{
 	long nik;
 };
 // Struct Node  
-struct Node{
+struct Node_vaksin{
     vaksin data;
-    struct Node *next;
+    struct Node_vaksin *next;
 };
 
 
@@ -22,7 +22,7 @@ struct lokasi{
 	string waktu, tempat, jalan, kelurahan;
 };
 //struct Node
-struct node{
+struct node_lokasi{
 	lokasi datas;
-	struct node *next;
+	struct node_lokasi *next;
 };

@@ -2,20 +2,20 @@
 
 void tekanLanjut();
 
-void tambahdata(node **Head);
+void tambahdata(node_lokasi **Head);
 
-void tampildata(node *Head);
+void tampildata(node_lokasi *Head);
 
-void updatedata(node **Head);
+void updatedata(node_lokasi **Head);
 
-void deletelast(node **Head);
+void deletelast(node_lokasi **Head);
 
 void dataadmin();
 
 void loginAdmin();
 
-void daftar_vaksin (Node **head);
+void daftar_vaksin (Node_vaksin **head);
 
-void tampil_data(Node *head);
+void tampil_data(Node_vaksin *head);
 
 void menuUser();
